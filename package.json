@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "main": "lib/settings",
-  "repository": "https://github.com/atom/steam-pirate-ui",
+  "repository": "https://github.com/v3ss0n/steam-pirate-ui",
   "engines": {
     "atom": ">0.40.0"
   }

@@ -22,8 +22,8 @@ http://typodermicfonts.com/nk57-monospace/
 ## Compatible syntax themes
 
 - All dark themes
-- Wrok best with one-dark and https://github.com/anomaly256/neon-syntax
-
+- Work best with one-dark-syntax and https://github.com/anomaly256/neon-syntax
+- Companion Syntax theme (that seen in screenshot , coming soon)
 
 ## TODO (PRs welcome)
 
