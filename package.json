@@ -1,5 +1,5 @@
 {
-  "name": "neon-pirate-ui",
+  "name": "steam-pirate-ui",
   "theme": "ui",
   "version": "0.4.0",
   "description": "Dark , Adaptable  , Steampunk Glowing UI Theme with Cool background image.",
@@ -8,7 +8,8 @@
     "adaptive",
     "ui",
     "steampunk",
-    "glow"
+    "glow",
+    "image"
   ],
   "license": "MIT",
   "main": "lib/settings",
