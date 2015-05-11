@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: @font-size;
+	// text-rendering: optimizeSpeed;
+	// -webkit-font-smoothing: auto;
+}
+body {
+	background-image: url("atom://neon-pirate-ui/imgs/hexxed.jpg");
+	background-size: cover;
+	
+}
+
+atom-workspace {
+	background-color: @app-background-color;
+
+	atom-panel-container.left:empty {
+		padding-left: @ui-padding-pane;
+	}
+
+}
+
+// Scrollbars
+.scrollbars-visible-always {
+	/deep/ ::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+
+	/deep/ ::-webkit-scrollbar-track {
+		background: @scrollbar-background-color;
+	}
+
+	/deep/ ::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		border: 3px solid @scrollbar-background-color;
+		background: @scrollbar-color;
+		background-clip: content-box;
+    box-shadow:inset 0px 0px 4px 0px hsla(213, 68%, 33%, 0.3);
+
+	}
+
+	/deep/ ::-webkit-scrollbar-corner {
+		background: @scrollbar-background-color;
+	}
+
+	/deep/ ::-webkit-scrollbar-thumb:vertical:active {
+		border-radius: 0;
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+
+	/deep/ ::-webkit-scrollbar-thumb:horizontal:active {
+		border-radius: 0;
+		border-top-width: 0;
+		border-bottom-width: 0;
+	}
+}
+
+// TODO: Move to a better place, not sure where it gets used
+.caret {
+  border-top: 5px solid #fff;
+  margin-top: -1px;
+}

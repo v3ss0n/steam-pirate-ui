@@ -1,0 +1,321 @@
+@tree-view-height: @ui-line-height;
+
+.tree-view {
+  font-size: @ui-size;
+  background: @tree-view-background-color;
+
+  .project-root.project-root {
+    padding-top: @ui-padding/2;
+    &:before {
+      height: @ui-tab-height;
+      border-top: 1px solid transparent;
+      background-clip: padding-box;
+    }
+    & > .header .name {
+      line-height: @ui-tab-height;
+    }
+  }
+
+  .selected:before {
+    background-color: rgba(0,0,0,0);
+    box-shadow: inset 0px 0px 15px 0px rgba(0,120,200,0.5);
+  }
+}
+
+.tree-view-resizer {
+  .tree-view-resize-handle {
+    width: 8px;
+  }
+}
+
+// Variable height, based on ems
+.list-group li:not(.list-nested-item),
+.list-tree li:not(.list-nested-item),
+.list-group li.list-nested-item > .list-item,
+.list-tree li.list-nested-item > .list-item {
+  line-height: @tree-view-height;
+}
+
+.list-group .selected::before,
+.list-tree .selected::before {
+  height: @tree-view-height;
+}
+
+// icon
+.list-group .icon,
+.list-tree .icon {
+  display: inline-block;
+  height: inherit;
+  &::before {
+    top: initial;
+    line-height: inherit;
+    height: inherit;
+    vertical-align: top;
+  }
+}
+
+
+//ICONS
+
+@yellow: rgb(181, 137, 0);
+@orange: rgb(203, 75, 22);
+@red: rgb(220, 50, 47);
+@magenta: rgb(211, 54, 130);
+@violet: rgb(108, 113, 196);
+@blue: rgb(38, 139, 210);
+@cyan: rgb(42, 161, 152);
+@green: rgb(133, 153, 0);
+ 
+[data-name]:before {
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+  font-family: 'Octicons Regular';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  color: lightblue;
+  text-shadow: 0px 0px 20px @blue;
+
+}
+ 
+// Coffeescript files
+[data-name$='.coffee']:before,
+[data-name$='.litcoffee']:before,
+[data-name$='.coffee.md']:before,
+[data-name='Cakefile']:before {
+  content: '\f010';
+  color: @green;
+  text-shadow: 0px 0px 5px @green;
+}
+ 
+// Meta configuration files
+[data-name$='.gitignore']:before,
+[data-name$='.gitattributes']:before,
+[data-name$='.gitkeep']:before,
+[data-name$='.npmignore']:before,
+[data-name$='.npmrc']:before,
+[data-name$='.rspec']:before,
+[data-name$='.pairs']:before,
+[data-name$='.spectacular']:before,
+[data-name='Procfile']:before,
+[data-name$='.ruby-version']:before {
+  content: '\f02f';
+  color: @magenta;
+  text-shadow: 0px 0px 5px @magenta;
+}
+ 
+// GIT repo
+[data-name$='.git']:before {
+  content: '\f00a';
+  text-shadow: 0px 0px 5px @red;
+}
+ 
+ 
+// Source map file
+[data-name$='.map']:before {
+  content: '\f060';
+  color: @orange;
+  text-shadow: 0px 0px 5px @orange;
+}
+ 
+// Lock files
+[data-name$='.lock']:before {
+  content: '\f06a';
+  color: @yellow;
+  text-shadow: 0px 0px 5px @yellow;
+}
+ 
+// Ruby files
+[data-name$='.rb']:before,
+[data-name$='.ru']:before,
+[data-name$='.rake']:before,
+[data-name$='.gemspec']:before,
+[data-name='Gemfile']:before,
+[data-name='Rakefile']:before,
+[data-name='Guardfile']:before,
+[data-name='Capfile']:before {
+  color: @red;
+  content: '\f047';
+  text-shadow: 0px 0px 5px @red;
+}
+ 
+  
+ // python files
+ [data-name$='.py']:before,
+ [data-name$='.ipynb']:before, {
+   color: @blue;
+   content: '\f011';
+   text-shadow: 0px 0px 8px @blue;
+ }
+ 
+// Stylesheets
+[data-name$='.styl']:before,
+[data-name$='.css']:before,
+[data-name$='.sass']:before,
+[data-name$='.scss']:before,
+[data-name$='.less']:before {
+  content: '\f058';
+  color: @blue;
+  text-shadow: 0px 0px 5px @blue;
+}
+ 
+// Archives
+[data-name$='.zip']:before,
+[data-name$='.rar']:before,
+[data-name$='.gz']:before {
+  content: '\f013';
+  color: @cyan;
+  text-shadow: 0px 0px 5px @cyan;
+}
+ 
+// Templates
+[data-name$='.jade']:before,
+[data-name$='.haml']:before,
+[data-name$='.erb']:before,
+[data-name$='.hbs']:before {
+  content: '\f05f';
+  color: @yellow;
+  text-shadow: 0px 0px 5px @yellow;
+}
+ 
+// In project configuration files
+[data-name$='.json']:before,
+[data-name$='.cson']:before,
+[data-name$='.yml']:before  {
+  content: '\f07c';
+  color: @violet;
+  text-shadow: 0px 0px 5px @violet;
+}
+ 
+// DS_Store
+[data-name$='.DS_Store']:before,
+[data-name*='.sublime-']:before {
+  content: '\f02f';
+  text-shadow: 0px 0px 5px @red;
+}
+ 
+// License files
+[data-name*='LICENSE']:before,
+[data-name^='CHANGELOG']:before,
+[data-name^='README']:before,
+[data-name^='Readme']:before,
+[data-name^='License']:before,
+[data-name^='History']:before {
+  color: #78b4c4;
+  text-shadow: 0px 0px 5px #78b4c4;
+ 
+}
+ 
+// PDF files
+[data-name$='.pdf']:before {
+  content: '\f014';
+  color: @orange;
+  text-shadow: 0px 0px 5px @orange;
+}
+ 
+// Log files
+.file-icon-log:before,
+[data-name$='.log']:before {
+  content: '\f091';
+  color: @orange;
+  text-shadow: 0px 0px 5px @orange;
+}
+ 
+// Database & dumps
+[data-name$='.sqlite']:before,
+[data-name$='.csv']:before,
+[data-name$='.sqlite3']:before,
+[data-name$='.dump']:before {
+  content: '\f096';
+  color: @cyan;
+  text-shadow: 0px 0px 5px @cyan;
+}
+ 
+// Fonts files
+[data-name$='.woff']:before,
+[data-name$='.ttf']:before,
+[data-name$='.otf']:before,
+[data-name$='.eot']:before {
+  content: '\f05e';
+  color: @blue;
+  text-shadow: 0px 0px 5px @blue;
+}
+ 
+// HTML files
+[data-name$='.html']:before {
+  content: "\f0b6";
+  color: #5cb5db;
+  text-shadow: 0px 0px 5px #5cb5db;
+}
+ 
+// Ctags files
+[data-name='.ctags']:before,
+[data-name='.tags']:before,
+[data-name='.gemtags']:before,
+[data-name='tags']:before,
+[data-name='TAGS']:before {
+  content: '\f015';
+  color: @blue;
+  text-shadow: 0px 0px 5px @blue;
+}
+ 
+ 
+// JS files
+[data-name$='.js']:before
+{
+  content: '\f011';
+  color: #90c276;
+  text-shadow: 0px 0px 5px #90c276;
+}
+ 
+// Images files
+[data-name$='.jpg']:before,
+[data-name$='.png']:before,
+[data-name$='.gif']:before,
+[data-name$='.psd']:before,
+[data-name$='.svg']:before,
+[data-name$='.ico']:before {
+  content: '\f012';
+  color: @green;
+  text-shadow: 0px 0px 5px @green;
+}
+ 
+// Videos files
+[data-name$='.mpg']:before,
+[data-name$='.avi']:before,
+[data-name$='.mov']:before,
+[data-name$='.flv']:before,
+[data-name$='.swf']:before,
+[data-name$='.ogg']:before {
+  content: '\f057';
+  color: @orange;
+  text-shadow: 0px 0px 5px @orange;
+}
+ 
+// Markdown files
+[data-name$='.md']:before {
+  content: '\f0c9';
+  text-shadow: 0px 0px 5px @red;
+}
+ 
+// Todos
+[data-name*='todo']:before {
+  content: '\f076';
+  color: @cyan;
+  text-shadow: 0px 0px 5px @cyan;
+}
+ 
+// Shell scripts
+[data-path*='bin/']:before,
+[data-name$='.sh']:before,
+[data-name$='.bat']:before {
+  content: '\f0c8';
+  color: @magenta;
+  text-shadow: 0px 0px 5px @magenta;
+}
