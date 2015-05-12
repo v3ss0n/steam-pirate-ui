@@ -11,6 +11,12 @@ and smooth Animations!
 * SteamPunk Pirate Skull background image.
 * Inspired by Neon Syntax : https://github.com/anomaly256/neon-syntax
 
+## New Features in 0.3.0
+
+- Bluring of background image
+(thanks alot to @braver)
+- Settings for bluring configuration
+(thanks alto to @olmokramer)
 
 ## Check this out:
 
@@ -24,6 +30,9 @@ http://typodermicfonts.com/nk57-monospace/
 - All dark themes
 - Work best with one-dark-syntax and https://github.com/anomaly256/neon-syntax
 - Companion Syntax theme (that seen in screenshot , coming soon)
+
+
+
 
 ## TODO (PRs welcome)
 

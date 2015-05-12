@@ -10,6 +10,11 @@ module.exports =
         'Auto',
         'Spacious',
       ]
+    blurBackground:
+      title: 'Blur Background'
+      description: 'Blurs the background with given blur Radius, set 0 to disable'
+      type: 'string'
+      default: "0"
 
   activate: (state) ->
     atom.themes.onDidChangeActiveThemes ->
