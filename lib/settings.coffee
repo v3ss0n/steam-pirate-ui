@@ -15,7 +15,12 @@ module.exports =
             description : 'Blurs the background with given blur Radius, set 0 to disable'
             type : 'string'
             default : "0"
-            
+        backgroundImage :
+            title : 'Background Image'
+            description : 'Path to the background image'
+            type : 'string'
+            default : 'atom://steam-pirate-ui/imgs/hexxed.jpg'
+
     activate : (state) ->
         atom.themes.onDidChangeActiveThemes ->
             Config = require './config'
