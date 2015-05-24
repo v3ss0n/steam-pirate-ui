@@ -10,11 +10,11 @@ and smooth Animations!
 * Translucent  Backgrounds that adapts color scheme of syntax theme
 * SteamPunk Pirate Skull background image.
 * Inspired by Neon Syntax : https://github.com/anomaly256/neon-syntax
+* ### NEW FEATURE ### Now you can select your own favourite background!
 
 ## New Features in 0.4.0
-- Applied blur on startup
-- Cleaned up style changes on deactivation
-- Companion syntax theme released : https://atom.io/themes/steam-pirate-syntax
+- Merged pull request  https://github.com/v3ss0n/steam-pirate-ui/pull/2
+- This enables Cutom backgrounds! Thanks alot to https://github.com/MCluck90
 
 ## New Features in 0.3.1
 - Applied blur on startup
@@ -50,5 +50,5 @@ http://typodermicfonts.com/nk57-monospace/
 
 ## TODO (PRs welcome)
 
-- [x] Custom Background Selection
+- [x] Custom Background Selection ( done by @MCluck90 https://github.com/MCluck90)
 - [ ] More glows ( create issues if you want glows at other parts) 
