@@ -77,7 +77,7 @@
 .markdown-preview {
   font-size: @ui-size*1.25;
   color: @markdown-preview-color;
-  background-color: @markdown-preview-background-color;
+  background-color:  @app-background-color;
 
 
   h1, h2 {
@@ -137,7 +137,6 @@
 }
 
 
-
 // Timecop ---------------------------
 
 .timecop {
@@ -164,4 +163,14 @@
   .list-item .inline-block {
     line-height: 1.5;
   }
+}
+
+// Termrk
+
+atom-panel.termrk-panel .termrk-container{
+    background-color:  @app-background-color;
+    border: 5px solid transparent;
+}
+atom-panel .termrk .terminal {
+    background-color: @app-background-color;
 }

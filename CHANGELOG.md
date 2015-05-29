@@ -1,3 +1,8 @@
+## New Features in 0.5.1
+- Font size setting fixed, working properly
+- Cool lightsabre scrollbar with transparent track!
+- Added customization for Termrk
+
 ## New Features in 0.5.0
 - Merged with one dark ui 0.9.0
 - Enabling font size config
@@ -12,7 +17,7 @@
 
 ## New Features in 0.3.0
 
-- Bluring of background image
+- Blur support
 (thanks alot to @braver)
-- Settings for blur configuration
+- Settings for blur radius
 (thanks alto to @olmokramer)

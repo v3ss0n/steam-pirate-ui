@@ -15,10 +15,10 @@ module.exports =
       else if currentFontSize is 'Auto'
         root.style.fontSize = ''
 
-    atom.config.onDidChange 'one-dark-ui.fontSize', ->
-      setFontSize(atom.config.get('one-dark-ui.fontSize'))
+    atom.config.onDidChange 'steam-pirate-ui.fontSize', ->
+      setFontSize(atom.config.get('steam-pirate-ui.fontSize'))
 
-    setFontSize(atom.config.get('one-dark-ui.fontSize'))
+    setFontSize(atom.config.get('steam-pirate-ui.fontSize'))
 
 
     # Layout Mode

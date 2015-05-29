@@ -1,6 +1,7 @@
-## Steam Pirate UI
-Dark , Adaptable  , Steampunk Glowing UI Theme with Cool background image
-and smooth Animations! 
+# Steam Pirate UI
+
+***Dark , Adaptable  , Steampunk Glowing UI Theme with Cool background image
+and smooth Animations!*** 
 
 ## Features
 
@@ -12,6 +13,11 @@ and smooth Animations!
 * Inspired by Neon Syntax : https://github.com/anomaly256/neon-syntax
 * ***NEW FEATURE*** Now you can select your own favourite background!
 * ***NEW FEATURE*** Now you can set fontsize
+
+## New Features in 0.5.1
+- Fixed font size config not actually workikg
+- Subtle , lightsabre glow scroll bar.
+
 ## New Features in 0.5.0
 - Merged with one dark ui 0.9.0
 - Enabling font size config
@@ -24,8 +30,8 @@ and smooth Animations!
 - Applied blur on startup
 - Cleaned up style changes on deactivation
 - Companion syntax theme released : https://atom.io/themes/steam-pirate-syntax
-## New Features in 0.3.0
 
+## New Features in 0.3.0
 - Bluring of background image
 (thanks alot to @braver)
 - Settings for bluring configuration

@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-}
+	}
 html {
   font-size: @font-size;
   // text-rendering: optimizeSpeed;
@@ -41,11 +41,12 @@ atom-workspace {
     background: @scrollbar-background-color;
   }
   /deep/::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    border: 3px solid @scrollbar-background-color;
-    background: @scrollbar-color;
-    background-clip: content-box;
-    box-shadow: inset 0 0 4px 0 hsla(213, 68%, 33%, 0.3);
+    border-radius: 4px;
+    border: 1px solid transparent;
+		border-color: transparent;
+		background: transparent;
+    box-shadow: inset 0px 0px 4px 2px hsla(213, 60%, 33%, 0.28);
+  
   }
   /deep/::-webkit-scrollbar-corner {
     background: @scrollbar-background-color;
@@ -61,21 +62,26 @@ atom-workspace {
     border-bottom-width: 0;
 	}
 
-	atom-text-editor {
-		/deep/ ::-webkit-scrollbar-track {
-			background: @scrollbar-background-color-editor;
-		}
-		/deep/ ::-webkit-scrollbar-corner {
-			background: @scrollbar-background-color-editor;
-		}
-		/deep/ ::-webkit-scrollbar-thumb {
-			border-color: @scrollbar-background-color-editor;
-			background: @scrollbar-color-editor;
-		}
-  }
+atom-text-editor {
+	/deep/ ::-webkit-scrollbar-track {
+		background: @scrollbar-background-color;
+	}
+	/deep/ ::-webkit-scrollbar-corner {
+		background: @scrollbar-background-color;
+	}
+	/deep/ ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    border: 1px solid transparent;
+		border-color: transparent;
+		background: transparent;
+    box-shadow: inset 0px 0px 4px 2px hsla(213, 60%, 33%, 0.28);
+
+	}
+}
+
 }
 // TODO: Move to a better place, not sure where it gets used
 .caret {
   border-top: 5px solid #fff;
-  margin-top: -1px;
+  margin-top: -1px; 
 }
