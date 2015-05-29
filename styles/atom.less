@@ -19,7 +19,19 @@ atom-workspace {
     padding-left: @ui-padding-pane;
   }
 }
-// Scrollbars
+
+.platform-darwin {
+	atom-workspace.theme-one-light-ui {
+	  border-top: 1px solid darken(@base-border-color, 20%);
+	}
+	&.is-blurred atom-workspace.theme-one-light-ui {
+	  border-top-color: @base-border-color;
+	}
+}
+
+
+// Scrollbars ------------------------------------
+
 .scrollbars-visible-always {
   /deep/::-webkit-scrollbar {
     width: 10px;
@@ -47,6 +59,19 @@ atom-workspace {
     border-radius: 0;
     border-top-width: 0;
     border-bottom-width: 0;
+	}
+
+	atom-text-editor {
+		/deep/ ::-webkit-scrollbar-track {
+			background: @scrollbar-background-color-editor;
+		}
+		/deep/ ::-webkit-scrollbar-corner {
+			background: @scrollbar-background-color-editor;
+		}
+		/deep/ ::-webkit-scrollbar-thumb {
+			border-color: @scrollbar-background-color-editor;
+			background: @scrollbar-color-editor;
+		}
   }
 }
 // TODO: Move to a better place, not sure where it gets used

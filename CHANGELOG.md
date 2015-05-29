@@ -1,3 +1,11 @@
+## New Features in 0.5.0
+- Merged with one dark ui 0.9.0
+- Enabling font size config
+
+## New Features in 0.4.0
+- Merged pull request  https://github.com/v3ss0n/steam-pirate-ui/pull/2
+- This enables Cutom backgrounds! Thanks alot to https://github.com/MCluck90
+
 ## New Features in 0.3.1
 - Applied blur on startup
 - Cleaned up style changes on deactivation

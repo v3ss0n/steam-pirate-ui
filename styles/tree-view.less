@@ -5,10 +5,9 @@
   background: @tree-view-background-color;
 
   .project-root.project-root {
-    padding-top: @ui-padding/2;
+    padding-top: @ui-padding-pane;
     &:before {
       height: @ui-tab-height;
-      border-top: 1px solid transparent;
       background-clip: padding-box;
     }
     & > .header .name {
@@ -20,6 +19,11 @@
     background-color: rgba(0,0,0,0);
     box-shadow: inset 0px 0px 15px 0px rgba(0,120,200,0.5);
   }
+}
+
+.theme-steam-pirate-ui .tree-view .project-root.project-root::before {
+  border-top: 1px solid transparent;
+  background-clip: padding-box;
 }
 
 .tree-view-resizer {
@@ -52,6 +56,35 @@
     height: inherit;
     vertical-align: top;
   }
+}
+
+// Active tree-view marker --------------
+
+.tree-view::before {
+  content: "";
+  position: fixed;
+  pointer-events: none;
+  z-index: 1;
+  top: @ui-padding-pane;
+  left: 0;
+  height: @ui-tab-height;
+  bottom: 0;
+  width: 2px;
+  background: @base-accent-color;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity .16s, transform .16s cubic-bezier(.80, 0, .90, .53);
+}
+
+[data-show-on-right-side="true"] .tree-view::before {
+  left: auto;
+  right: 0;
+}
+
+.tree-view:focus::before {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: opacity .16s, transform .32s cubic-bezier(0,.6,.2,1);
 }
 
 

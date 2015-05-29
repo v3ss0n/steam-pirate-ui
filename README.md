@@ -4,13 +4,17 @@ and smooth Animations!
 
 ## Features
 
-* Based on one-dark-ui latest commit, https://github.com/atom/one-dark-ui/commit/4f7049d525ebf1126d200c748a0da7ed08f631d0
+* Based on one-dark-ui 0.9.0, https://github.com/atom/one-dark-ui/
 * Glowing tab highlight
 * Neon Glowing  selection on Tree View
 * Translucent  Backgrounds that adapts color scheme of syntax theme
 * SteamPunk Pirate Skull background image.
 * Inspired by Neon Syntax : https://github.com/anomaly256/neon-syntax
-* ### NEW FEATURE ### Now you can select your own favourite background!
+* ***NEW FEATURE*** Now you can select your own favourite background!
+* ***NEW FEATURE*** Now you can set fontsize
+## New Features in 0.5.0
+- Merged with one dark ui 0.9.0
+- Enabling font size config
 
 ## New Features in 0.4.0
 - Merged pull request  https://github.com/v3ss0n/steam-pirate-ui/pull/2
