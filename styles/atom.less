@@ -14,17 +14,18 @@ body:before {
   background-size: cover;
 }
 atom-workspace {
-  background-color: @app-background-color;
+  // background-color: @app-background-color;
+  background-color: darken(@app-background-color,5%);
   atom-panel-container.left:empty {
     padding-left: @ui-padding-pane;
   }
 }
 
 .platform-darwin {
-	atom-workspace.theme-one-light-ui {
+	atom-workspace.theme-steam-pirate-ui {
 	  border-top: 1px solid darken(@base-border-color, 20%);
 	}
-	&.is-blurred atom-workspace.theme-one-light-ui {
+	&.is-blurred atom-workspace.theme-steam-pirate-ui {
 	  border-top-color: @base-border-color;
 	}
 }

@@ -4,10 +4,29 @@ atom-text-editor[mini] {
 
   overflow: auto;
 }
-atom-text-editor{
+atom-text-editor,
+:host{
   background-color: @app-background-color;
-
 }
+
+atom-text-editor,
+.tile,:host{
+  background-color:  transparent ;
+}
+atom-text-editor,
+atom-text-editor::shadow {
+  .scroll-view {
+  background-color:   @app-background-color !important ;
+  
+  }
+  .gutter {
+  background-color:   @app-background-color !important ;
+  
+  }
+}
+
+
+
 
 atom-text-editor[mini] {
   font-size: @ui-input-size;
