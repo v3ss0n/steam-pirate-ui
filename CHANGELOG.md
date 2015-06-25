@@ -1,3 +1,6 @@
+## New Features in 0.6.1
+- Fixed tile rendering , which darkens Text Editor background.
+
 ## New Features in 0.5.1
 - Font size setting fixed, working properly
 - Cool lightsabre scrollbar with transparent track!

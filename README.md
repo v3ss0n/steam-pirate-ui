@@ -14,6 +14,9 @@ and smooth Animations!***
 * ***NEW FEATURE*** Now you can select your own favourite background!
 * ***NEW FEATURE*** Now you can set fontsize
 
+## New Features in 0.6.1
+- Fixed tile rendering , which darkens Text Editor background.
+
 ## New Features in 0.5.1
 - Fixed font size config not actually workikg
 - Subtle , lightsabre glow scroll bar.
