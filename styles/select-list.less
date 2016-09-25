@@ -12,3 +12,9 @@
     text-shadow: @select-list-selected-shadow;
   }
 }
+
+:not(.modal) .select-list .list-group {
+  li.selected {
+    background: mix(@select-list-selected-background, #707070);
+  }
+}
