@@ -5,23 +5,23 @@ atom-text-editor[mini] {
   overflow: auto;
 }
 atom-text-editor,
-:host{
+atom-text-editor{
   background-color: @app-background-color;
 }
 
 atom-text-editor,
-.tile,:host{
+.tile,atom-text-editor{
   background-color:  transparent ;
 }
 atom-text-editor,
-atom-text-editor::shadow {
+atom-text-editor.editor {
   .scroll-view {
   background-color:   @app-background-color !important ;
-  
+
   }
   .gutter {
   background-color:   @app-background-color !important ;
-  
+
   }
 }
 
@@ -40,7 +40,7 @@ atom-text-editor[mini] {
   padding-left: @ui-padding/2;
 
   &,
-  &::shadow {
+  &.editor {
     .placeholder-text {
       color: @text-color-subtle;
     }
@@ -54,7 +54,7 @@ atom-text-editor[mini] {
   }
 
   &.is-focused,
-  &.is-focused::shadow {
+  &.is-focused.editor {
     .focus();
     background-color: @input-background-color-focus;
     .selection .region {
