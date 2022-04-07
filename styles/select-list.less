@@ -1,9 +1,13 @@
 
-@import "ui-variables.less";
-
 @select-list-selected-text-color: @text-color-selected;
 @select-list-selected-background: rgba(50, 52, 60, 0.7);
 @select-list-selected-shadow: 0px 0px 2px @text-color-selected;
+
+:not(.modal) .select-list .list-group {
+  li.selected {
+    background: lighten(@select-list-selected-background, 10%);
+  }
+}
 
 .modal .select-list .list-group {
   li.selected {
